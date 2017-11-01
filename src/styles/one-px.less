@@ -1,0 +1,84 @@
+.one-px,
+.one-px-top,
+.one-px-right,
+.one-px-bottom,
+.one-px-left,
+.one-px-top-bottom,
+.one-px-lighter,
+.one-px-top-lighter,
+.one-px-right-lighter,
+.one-px-bottom-lighter,
+.one-px-left-lighter {
+  position: relative;
+}
+
+.one-px {
+  &:before {
+    .setLine()
+  }
+}
+
+.one-px-lighter {
+  &:before {
+    .setLine(#E4E4E4)
+  }
+}
+
+.one-px-top {
+  &:before {
+    .setTopLine()
+  }
+}
+
+.one-px-top-lighter {
+  &:before {
+    .setTopLine(#E4E4E4)
+  }
+}
+
+.one-px-right {
+  &:before {
+    .setRightLine()
+  }
+}
+
+.one-px-right-lighter {
+  &:before {
+    .setRightLine(#E4E4E4)
+  }
+}
+
+.one-px-bottom {
+  &:before {
+    .setBottomLine()
+  }
+}
+
+.one-px-bottom-lighter {
+  &:before {
+    .setBottomLine(#E4E4E4);
+    background: #E4E4E4;
+  }
+}
+
+.one-px-left {
+  &:before {
+    .setLeftLine()
+  }
+}
+
+.one-px-left-lighter {
+  &:before {
+    .setLeftLine(#E4E4E4)
+  }
+}
+
+.one-px-top-bottom {
+  &:before {
+    .setTopLine()
+  }
+
+  &:after {
+    .setBottomLine()
+  }
+}

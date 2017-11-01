@@ -8,6 +8,7 @@ import Vuex from 'vuex'
 import * as actions from './actions'
 import * as getters from './getters'
 import * as mutations from './mutations'
+import * as state from './state'
 
 // Setup plugin
 Vue.use(Vuex)
@@ -17,9 +18,6 @@ Vue.use(Vuex)
 // bodyData for server bodyData
 // upBodyData for localBodyData
 // imgUrl for model url
-const state = {
-  direction: 'forward'
-}
 
 export default new Vuex.Store({
   state,
